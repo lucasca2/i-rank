@@ -9,10 +9,9 @@ npm-debug.log*
 
 # Build Folder
 .idea
+.cache
 build
 
 # LockFiles
-package-lock.json
-yarn.lock
 .env
 

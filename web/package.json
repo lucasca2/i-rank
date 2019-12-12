@@ -1,0 +1,32 @@
+{
+  "name": "i-rank",
+  "version": "1.0.0",
+  "description": "an application to track team performance",
+  "main": "index.js",
+  "repository": "https://github.com/t-nunes/react-parcel",
+  "author": "Lucas Costa Amaral",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html -d dev",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "polished": "^3.4.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "styled-components": "^4.4.1"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1"
+  }
+}
