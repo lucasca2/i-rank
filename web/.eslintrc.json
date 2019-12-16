@@ -1,0 +1,58 @@
+{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "airbnb"
+    ],
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            ".storybook/**",
+            "stories/**"
+          ]
+        }
+      ],
+        "react/jsx-filename-extension": [
+            "error",
+            {
+              "extensions": [".js", ".jsx"]
+            }
+          ],
+          "global-require": "off",
+          "import/prefer-default-export": "off",
+          "no-unused-expressions": ["error", { "allowTaggedTemplates": true }]
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [
+                    ["@storybook/*", "node_modules"],
+                    ["pages", "./src/pages"],
+                    ["config", "./src/config"],
+                    ["components", "./src/components"],
+                    ["templates", "./src/templates"]
+                ],
+                "extensions": [".js", ".jsx", ".json"]
+            }
+        }
+    }
+}
